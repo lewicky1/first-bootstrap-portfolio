@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed|Roboto+Mono:400,500');
+
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.dash {
+    position: absolute;
+    bottom: 5%;
+    right: 1%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-size: 0.6em;
+}
+
+.dash .fas {
+    color: #555;
+    -webkit-animation: animate 3s linear infinite;
+    animation: animate 3s linear infinite;
+}
+
+@-webkit-keyframes animate {
+    0% {
+        -webkit-transform: translateY(-30px);
+        transform: translateY(-30px);
+
+    }
+
+    100% {
+        -webkit-transform: translateY(30px);
+        transform: translateY(30px);
+        opacity: 0.1;
+    }
+}
+
+@keyframes animate {
+    0% {
+        -webkit-transform: translateY(-30px);
+        transform: translateY(-30px);
+
+    }
+
+    100% {
+        -webkit-transform: translateY(30px);
+        transform: translateY(30px);
+        opacity: 0.1;
+    }
+}
+
+.row {
+    padding: 0;
+    margin: 0;
+}
+
+.txt-type>.txt {
+    border-right: 1px solid #777;
+}
+
+.first-page {
+    height: 100vh;
+    font-family: 'Roboto Mono';
+}
+
+.first-text {
+    margin-top: 20%;
+    padding-left: 5%;
+    font-size: 4em;
+}
+
+.second-text {
+    font-size: 0.7em;
+}
+
+.text-type {
+    font-size: 0.6em;
+}
+
+.other-page {
+    height: 100vh;
+    font-family: 'Roboto Condensed';
+}
+
+.portfolio-page {
+    height: 92vh;
+    font-family: 'Roboto Condensed';
+}
+
+.about {
+    font-size: 2.5em;
+}
+
+.details {
+    font-size: 1.8em;
+}
+
+.project {
+    border: 3px solid #c5c5c5;
+    width: 326px;
+    height: 236px;
+}
+
+.project-info {
+    display: none;
+    position: absolute;
+    height: 236px;
+    width: 326px;
+    background-color: #a5a5a5;
+    top: 0px;
+    left: 15px;
+    opacity: 0.9;
+}
+
+.project-info div {
+    color: #fff;
+    font-size: 2em;
+    text-align: center;
+    text-decoration: underline;
+    margin-top: 15px;
+}
+
+.project-info div.info-details {
+    font-size: 1.3em;
+    margin-top: 0px;
+    text-decoration: none;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.project-info div.hrefs {
+    margin-top: 0px;
+    text-decoration: none;
+    position: absolute;
+    bottom: 2px;
+    width: 100%;
+}
+
+.project-info a:hover {
+    text-decoration: none;
+    color: transparent;
+}
+
+.project-info .double a:first-child {
+    margin-right: 85px;
+}
+
+.credits {
+    font-size: 0.8em;
+    font-weight: 400;
+    color: #d5d5d5;
+}
+
+
+@media (max-width: 480px) {
+    .first-text {
+        margin-top: 100%;
+        padding-left: 5%;
+        font-size: 2em;
+    }
+
+    .offset-1 {
+        margin-left: 0 !important;
+    }
+
+    .web {
+        display: none;
+    }
+
+    .other-page {
+        height: auto;
+    }
+
+    .about {
+        font-weight: 700;
+        margin-top: 3%;
+        margin-bottom: 3%;
+    }
+
+    .portfolio-page {
+        height: auto;
+    }
+
+    .project {
+        width: 286px;
+        height: 208px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 15px;
+    }
+
+    .project img {
+        width: 280px;
+    }
+
+    .project-info {
+        position: relative;
+        top: -220px;
+        width: 286px;
+        height: 208px;
+        left: 0;
+    }
+
+    .project-info div {
+        font-size: 1.5em;
+    }
+
+    .project-info div.info-details {
+        font-size: 1.2em;
+    }
+
+    .footer_links {
+        margin-left: 0 !important;
+        width: 33%;
+    }
+
+    ::-webkit-scrollbar {
+        width: 0px;
+    }
+}
+
+@media (max-width: 768px) {
+    .first-text {
+        margin-top: 75%;
+    }
+
+    .project {
+        width: 234px;
+        height: 171px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .project img {
+        width: 228px;
+    }
+
+    .project-info {
+        position: relative;
+        top: -182px;
+        width: 234px;
+        height: 171px;
+        left: 0;
+    }
+
+    .project-info div {
+        font-size: 1.4em;
+    }
+
+    .project-info div.info-details {
+        font-size: 1.1em;
+    }
+
+    ::-webkit-scrollbar {
+        width: 0px;
+    }
+}
